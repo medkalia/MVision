@@ -261,10 +261,8 @@ public class Training extends AppCompatActivity implements CameraBridgeViewBase.
         if ((facesArray.length==1)&&(faceState==TRAINING)&&(countImages<MAXIMG)&&(!text.equals("")))
         {
 
-
             Mat m;
             Rect r=facesArray[0];
-
 
             m=mRgba.submat(r);
             mBitmap = Bitmap.createBitmap(m.width(),m.height(), Bitmap.Config.ARGB_8888);

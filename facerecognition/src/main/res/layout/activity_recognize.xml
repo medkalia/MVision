@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -14,42 +15,39 @@
 
         <cultoftheunicorn.marvel.Tutorial3View
             android:id="@+id/tutorial3_activity_java_surface_view"
-            android:layout_width="325dp"
-            android:layout_height="250dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="35dp" />
+            android:layout_alignParentTop="true"/>
 
         <TextView
             android:id="@+id/results"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginStart="40dp"
-            android:layout_above="@+id/scan"
-            android:layout_toRightOf="@+id/tutorial3_activity_java_surface_view"
-            android:layout_toEndOf="@+id/tutorial3_activity_java_surface_view"
-            android:layout_marginBottom="15dp"
-            android:textAlignment="center"
+            android:text="name will appear here"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:background="@drawable/roundpanel"
+            android:layout_alignTop="@+id/scan"
+            android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:textStyle="bold"/>
+            android:textAlignment="center"
+            android:textStyle="bold" />
 
         <ToggleButton
             android:id="@+id/scan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/roundbutton"
             android:checked="false"
             android:textAllCaps="false"
             android:textOff="@string/scan"
-            android:textOn="@string/scanning"
-            android:layout_alignBottom="@+id/tutorial3_activity_java_surface_view"
-            android:layout_toRightOf="@+id/tutorial3_activity_java_surface_view"
-            android:layout_toEndOf="@+id/tutorial3_activity_java_surface_view"
-            android:layout_marginLeft="25dp"
-            android:layout_marginStart="25dp" />
+            android:textOn="@string/scanning" />
 
         <TextView
             android:id="@+id/textView3"
@@ -60,12 +58,14 @@
             android:layout_marginLeft="55dp"
             android:layout_marginStart="55dp"
             android:text="@string/results"
+            android:background="@drawable/roundbutton"
             android:textColor="@color/lightBlack"
             android:textStyle="bold"
             android:layout_alignTop="@+id/tutorial3_activity_java_surface_view" />
 
         <Button
             android:id="@+id/submit"
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"

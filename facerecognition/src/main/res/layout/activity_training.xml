@@ -12,43 +12,40 @@
         android:layout_height="wrap_content"
         tools:context="org.opencv.cultoftheunicorn.marvel.cultoftheunicorn.marvel.Training">
 
-            <cultoftheunicorn.marvel.Tutorial3View
-                android:id="@+id/tutorial3_activity_java_surface_view"
-                android:layout_width="250dp"
-                android:layout_height="250dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="65dp"
-                android:layout_marginStart="65dp"
-                android:layout_marginTop="35dp" />
+        <cultoftheunicorn.marvel.Tutorial3View
+            android:id="@+id/tutorial3_activity_java_surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
-            <ImageView
-                android:id="@+id/imagePreview"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_alignTop="@id/tutorial3_activity_java_surface_view"
-                android:layout_toRightOf="@id/tutorial3_activity_java_surface_view"
-                android:layout_toEndOf="@id/tutorial3_activity_java_surface_view"
-                android:layout_marginLeft="50dp"
-                android:layout_marginStart="50dp"
-                android:src="@drawable/user_image"
-                android:contentDescription="@string/image_preview" />
+        <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@string/image_preview"
+            android:src="@drawable/user_image"
+            android:visibility="visible" />
 
-            <ToggleButton
-                android:id="@+id/capture"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/tutorial3_activity_java_surface_view"
-                android:layout_alignRight="@+id/imagePreview"
-                android:layout_alignEnd="@+id/imagePreview"
-                android:layout_marginRight="23dp"
-                android:layout_marginEnd="23dp"
-                android:layout_marginBottom="10dp"
-                android:checked="false"
-                android:textOff="@string/capture"
-                android:textOn="@string/capturing"
-                android:textAllCaps="false"/>
+        <ToggleButton
+            android:id="@+id/capture"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/roundbutton"
+            android:checked="false"
+            android:textAllCaps="false"
+            android:textOff="@string/capture"
+            android:textOn="@string/capturing" />
 
     </RelativeLayout>
 
